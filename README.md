@@ -1,9 +1,6 @@
 # Practical 1
 
-1. Implementation of Star and Snowflake Schemas
-Objective: Create a physical database structure based on a conceptual model.
-Practical: Write SQL DDL to create Fact and Dimension tables. Establish primary and foreign key relationships that enforce referential integrity within a Star or Snowflake schema.
-
+AIM:  Write SQL DDL to create Fact and Dimension tables. Establish primary and foreign key relationships that enforce referential integrity within a Star or Snowflake schema.
 
 codes:- 
 
@@ -83,7 +80,7 @@ CREATE TABLE Fact_Sales (
 
 # practical no 2
 
-AIM :- Use Self-Joins, Multiple Inner/Outer Joins, and Cross Joins to combine data from 5+ normalized tables into a single wide "denormalized" view for reporting. 
+AIM : Use Self-Joins, Multiple Inner/Outer Joins, and Cross Joins to combine data from 5+ normalized tables into a single wide "denormalized" view for reporting. 
 
 code:- 
 
@@ -251,7 +248,7 @@ ORDER BY Year, Month, Product;
 
 # PRACTICAL NO. : 04
 
-Aim : Data Cleaning and Transformation
+AIM : Implement RANK(), DENSE_RANK(), and ROW_NUMBER() to find "Top N" products per category or identify the highest-earning employees in each department.
 
 
 codes:- 
@@ -362,7 +359,7 @@ WHERE Rank_No = 1;
 
 # PRACTICAL NO. : 05
 
-Aim : Association Rule Mining using Apriori Apply the Apriori algorithm to generate association rules. Analyze support, confidence, and lift values. Perform a Market Basket Analysis case study.
+AIM : Use LAG() and LEAD() window functions to calculate Month-over-Month (MoM) growth or identify trends in historical sales data. 
 
 codes:- 
 
@@ -469,7 +466,7 @@ FROM MonthlySales;
 
 
 # PRACTICAL NO. : 06
-Aim : To implement the Decision Tree (J48) classification algorithm in WEKA, train and test the model using different datasets, and analyze the classification results.
+AIM :  Rewrite deep subqueries into named CTEs (using the WITH clause). Practice Recursive CTEs to traverse hierarchical data like an organizational chart (Employee -> Manager). give query for it
 
 codes:- 
 
@@ -580,7 +577,7 @@ CONNECT BY PRIOR EmpID = ManagerID;
 
 
 # PRACTICAL NO. : 07
-Aim : To implement Naïve Bayes and IBk (k-Nearest Neighbors) classification algorithms in WEKA, evaluate their performance using different datasets, and compare the results using evaluation metrics
+AIM : Use the PIVOT operator (or CASE WHEN logic) to turn monthly sales rows into columns for a "Side-by-Side" yearly comparison report.
 
 codes:- 
 
@@ -615,8 +612,8 @@ ORDER BY Month;
 
 
 # PRACTICAL NO. : 08
-Aim : Model Evaluation Techniques
-Evaluate classification models using accuracy, precision, recall, F-measure, and confusion matrix with cross-validation
+AIM : Write an UPDATE/INSERT script to implement SCD Type 2. This involves using SQL to expire old records (setting an end_date) and inserting new versions of a record to keep history.
+
 
 codes:- 
 
@@ -658,8 +655,7 @@ ORDER BY EmpID, Start_Date;
 
 # PRACTICAL NO. : 09
 
-Aim : Clustering using K-Means
-Perform clustering using the SimpleKMeans algorithm and analyze cluster formation with visualization tools.
+AIM : Create Materialized Views to pre-calculate heavy aggregations. Compare the execution plan (using EXPLAIN) of a query before and after adding B-Tree or Bitmap indexes.
 
 codes:- 
 
@@ -777,8 +773,7 @@ SELECT * FROM TABLE(DBMS_XPLAN.DISPLAY);
 
 # practical no 10
 
-Aim : Density-Based Clustering (DBSCAN) and Use Case
-Implement density-based clustering in WEKA and analyze customer segmentation datasets.
+AIM : Write SQL queries to identify "dirty data" (nulls, duplicates, or outliers) and use CHECK constraints or Triggers to prevent inconsistent data from entering the warehouse.
 
 codes:- 
 

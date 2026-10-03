@@ -862,7 +862,7 @@ CHECK (age BETWEEN 1 AND 200);
 -- =========================================
 
 INSERT INTO customers7
-VALUES (6, 'Alex', 150, 'alex@gmail.com');
+VALUES (6, 'Alex', 200, 'alex@gmail.com');
 
 
 -- =========================================
